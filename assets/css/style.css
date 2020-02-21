@@ -1,0 +1,66 @@
+body {
+    background-image: url("../images/Background.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+#headerStyle {
+    font-size: 48px;
+    padding-bottom: 25px;
+}
+
+#directionTop {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: rgb(133, 81, 192);
+    font-family: 'Federant';
+    font-size: 20px;
+    line-height: 24px;
+    color: white;
+    text-align: center;
+    padding: 25px;
+  }
+
+  #actualGame {
+      position: relative;
+      top: 250px;
+      text-align: center;
+      font-family: 'Federant';
+      font-size: 22px;
+  }
+  #winningNumber {
+    padding-bottom: 20px;
+  }
+
+  #matchingNumber {
+    padding-bottom: 20px;
+  }
+
+  #yourNumber {
+    padding-bottom: 20px;
+  }
+
+  #losingNumber {
+    padding-bottom: 20px;
+  }
+
+  #crystalOne {
+      padding: 0px 15px 0px 15px;
+  }
+
+  #crystalTwo {
+    padding: 0px 15px 0px 15px;
+  }
+
+   #crystalThree {
+    padding: 0px 15px 0px 15px;
+  }
+
+   #crystalFour {
+    padding: 0px 15px 0px 15px;
+  }

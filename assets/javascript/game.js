@@ -48,22 +48,42 @@ console.log(crystalOneVar, crystalTwoVar, crystalThreeVar, crystalFourVar);
 $("#matchingNumber").html(randomNumber);
  
 
-// Our Score Counter
 // Crystal on click, adds amount to our score
 $("#crystalOne").click(function() {
     $("#yourNumber").html(crystalOneVar + ourScore);
 })
+
+$("#crystalTwo").click(function() {
+    $("#yourNumber").html(crystalTwoVar + ourScore);
+})
+
+$("#crystalThree").click(function() {
+    $("#yourNumber").html(crystalThreeVar + ourScore);
+})
+
+$("#crystalFour").click(function() {
+    $("#yourNumber").html(crystalFourVar + ourScore);
+})
+
+
+// Our Score Counter
+function scoreCounter() {
+    // ourScore + making the crystals a variable to add ?? or yourNumber 
+}
+
 
 // The player WINS if their total score matches the random number from the beginning of the game.
 function WinLoseCounter() {
     if (ourScore === randomNumber) {
     wins++;
     alert("You Win!");
+    reset();
     }
 
     else if (ourScore > randomNumber) {
     losses++;
     alert("Ya lose buddy boiii");
+    reset();
     }
 }
 // The player LOSES if their score goes above the random number.

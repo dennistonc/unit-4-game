@@ -4,19 +4,35 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="../unit-4-game/assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="../unit-4-game/assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Federant&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crystal Collector</title>
 </head>
 
 <body>
-<header>
-    <div>
-        <h1>
-            Crystal Collector
-        </h1>
-    </div>
-</header>
 
+<div>
+    <container id="directionTop">
+        <div>
+            <h1 id="headerStyle">
+                Crystal Collector
+            </h1>
+        </div>
+        <p>
+        You will be given the random number at the start of the game.
+        <br>
+        There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.
+        <br>
+        You win the game by matching your total score to a random number. You lose the game if your total score goes above the random number.
+        <br>
+        The value of each crystal is hidden from you until you click on it.
+        <br>
+        Each time when the game starts, the game will change the values of each crystal.
+        </p>
+    </container>
+</div>
+
+<container id="actualGame">
 <div>
     Wins: 
     <p id="winningNumber"></p>
@@ -37,7 +53,7 @@
     <p id="losingNumber"></p>
 </div>
 
-<div>
+<div id="crystalHolder">
     <p>
         <img src="./assets/images/Crystal1.png" id="crystalOne" height="100">
         <img src="./assets/images/Crystal2.png" id="crystalTwo" height="100">
@@ -45,20 +61,7 @@
         <img src="./assets/images/Crystal4.png" id="crystalFour" height="100">
     </p>
 </div>
-
-<div>
-    <p id="directionFooter">
-        You will be given the random number at the start of the game.
-        <br>
-        There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.
-        <br>
-        You win the game by matching your total score to a random number. You lose the game if your total score goes above the random number.
-        <br>
-        The value of each crystal is hidden from you until you click on it.
-        <br>
-        Each time when the game starts, the game will change the values of each crystal.
-    </p>
-</div>
+</container>
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="../unit-4-game/assets/javascript/game.js"></script>
