@@ -13,25 +13,6 @@ var crystalTwoVar;
 var crystalThreeVar;
 var crystalFourVar;
 
-//////RESET//////
-function reset() {
-    allButScoreReset = function(){
-        randomNumber.reset();
-        ourScore.reset();
-        crystalOneVar.reset();
-        crystalTwoVar.reset();
-        crystalThreeVar.reset();
-        crystalFourVar.reset();
-    }
-    
-    var randomNumber;
-    var crystalOneVar;
-    var crystalTwoVar;
-    var crystalThreeVar;
-    var crystalFourVar;
-    }
-//////////////////
-
 // Generate Score to Match (random number) -- The random number shown at the start of the game should be between 19 - 120.
 randomNumber = Math.floor(Math.random() * 101) + 19;
 console.log(randomNumber);
@@ -44,45 +25,75 @@ crystalFourVar = Math.floor(Math.random() * 12) + 1;
 console.log(crystalOneVar, crystalTwoVar, crystalThreeVar, crystalFourVar);
 
 
+//////RESET//////
+function reset() {
+        randomNumber = Math.floor(Math.random() * 101) + 19;
+        console.log(randomNumber);
+
+        ourScore = 0;
+
+        crystalOneVar = Math.floor(Math.random() * 12) + 1;
+        crystalTwoVar = Math.floor(Math.random() * 12) + 1;
+        crystalThreeVar = Math.floor(Math.random() * 12) + 1;
+        crystalFourVar = Math.floor(Math.random() * 12) + 1;
+        console.log(crystalOneVar, crystalTwoVar, crystalThreeVar, crystalFourVar);
+
+        $("#matchingNumber").text(randomNumber);
+        $("#yourNumber").text(0);
+    
+    }
+//////////////////
+
+
 // Display Random Number
-$("#matchingNumber").html(randomNumber);
+$("#matchingNumber").text(randomNumber);
  
 
 // Crystal on click, adds amount to our score
 $("#crystalOne").click(function() {
-    $("#yourNumber").html(crystalOneVar + ourScore);
+    ourScore = crystalOneVar + ourScore;
+    $("#yourNumber").text(ourScore);
+    TellWinner();
+    TellLoser();
 })
 
 $("#crystalTwo").click(function() {
-    $("#yourNumber").html(crystalTwoVar + ourScore);
+    ourScore = crystalTwoVar + ourScore;
+    $("#yourNumber").text(ourScore);
+    TellWinner();
+    TellLoser();
 })
 
 $("#crystalThree").click(function() {
-    $("#yourNumber").html(crystalThreeVar + ourScore);
+    ourScore = crystalThreeVar + ourScore;
+    $("#yourNumber").text(ourScore);
+    TellWinner();
+    TellLoser();
 })
 
 $("#crystalFour").click(function() {
-    $("#yourNumber").html(crystalFourVar + ourScore);
+    ourScore = crystalFourVar + ourScore;
+    $("#yourNumber").text(ourScore);
+    TellWinner();
+    TellLoser();
 })
 
-
-// Our Score Counter
-function scoreCounter() {
-    // ourScore + making the crystals a variable to add ?? or yourNumber 
-}
-
-
+// Score Counter
 // The player WINS if their total score matches the random number from the beginning of the game.
-function WinLoseCounter() {
+function TellWinner() {
     if (ourScore === randomNumber) {
     wins++;
+    $("#winningNumber").text(wins);
     alert("You Win!");
     reset();
     }
+}
 
-    else if (ourScore > randomNumber) {
+function TellLoser() {
+    if (ourScore > randomNumber) {
     losses++;
-    alert("Ya lose buddy boiii");
+    $("#losingNumber").text(losses);
+    alert("Take this L.");
     reset();
     }
 }

@@ -28,7 +28,7 @@ body {
 
   #actualGame {
       position: relative;
-      top: 250px;
+      top: 300px;
       text-align: center;
       font-family: 'Federant';
       font-size: 22px;
@@ -47,6 +47,10 @@ body {
 
   #losingNumber {
     padding-bottom: 20px;
+  }
+
+  #crystalHolder {
+    padding-top: 25px;
   }
 
   #crystalOne {
