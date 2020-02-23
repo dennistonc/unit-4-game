@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="../unit-4-game/assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="../unit-4-game/assets/css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Federant&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Federant|Slabo+27px&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crystal Collector</title>
 </head>
@@ -18,26 +18,23 @@
                 Crystal Collector
             </h1>
         </div>
-        <p>
-        You will be given the random number at the start of the game.
-        <br>
-        There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.
-        <br>
-        You win the game by matching your total score to a random number. You lose the game if your total score goes above the random number.
-        <br>
-        The value of each crystal is hidden from you until you click on it.
-        <br>
-        Each time when the game starts, the game will change the values of each crystal.
-        </p>
+        <div id ="paragraphStyle">
+            <p>
+            You will be given the random number at the start of the game.
+            <br>
+            There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.
+            <br>
+            You win the game by matching your total score to a random number. You lose the game if your total score goes above the random number.
+            <br>
+            The value of each crystal is hidden from you until you click on it.
+            <br>
+            Each time when the game starts, the game will change the values of each crystal.
+            </p>
+    </div>
     </container>
 </div>
 
 <container id="actualGame">
-<div>
-    Wins: 
-    <p id="winningNumber"></p>
-</div>
-
 <div>
     Number to Match: 
     <p id="matchingNumber"></p>
@@ -46,6 +43,11 @@
 <div>
     Your Number: 
     <p id="yourNumber"></p>
+</div>
+
+<div>
+    Wins: 
+    <p id="winningNumber"></p>
 </div>
 
 <div>

@@ -2,7 +2,7 @@ body {
     background-image: url("../images/Background.jpg");
     height: 100%;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size: cover;
     
 }
@@ -10,16 +10,24 @@ body {
 #headerStyle {
     font-size: 48px;
     padding-bottom: 25px;
+    font-family: 'Federant';
+}
+
+#paragraphStyle {
+  font-size: 20px;
+  font-family: 'Slabo 27px';
+  letter-spacing: 1px;
+  padding: 15px 0px 15px 0px;
 }
 
 #directionTop {
-    position: fixed;
-    left: 0;
-    top: 0;
+    position: relative;
+    display: inline-block;
     width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
     background-color: rgb(133, 81, 192);
-    font-family: 'Federant';
-    font-size: 20px;
     line-height: 24px;
     color: white;
     text-align: center;
@@ -28,11 +36,13 @@ body {
 
   #actualGame {
       position: relative;
-      top: 300px;
+      top: 50px;
+      width: 100%;
       text-align: center;
       font-family: 'Federant';
       font-size: 22px;
   }
+
   #winningNumber {
     padding-bottom: 20px;
   }
@@ -68,3 +78,128 @@ body {
    #crystalFour {
     padding: 0px 15px 0px 15px;
   }
+
+  @media screen and (max-width: 768px) {
+  #headerStyle {
+    font-size: 48px;
+    padding-bottom: 25px;
+    font-family: 'Federant';
+  }
+  
+  #paragraphStyle {
+    font-size: 20px;
+    font-family: 'Slabo 27px';
+    letter-spacing: 1px;
+    padding: 15px 0px 15px 0px;
+  }
+  
+  #directionTop {
+    position: relative;
+    display: inline-block;
+    width: 94%;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(133, 81, 192);
+    line-height: 24px;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    }
+  
+  #actualGame {
+    position: relative;
+    top: 50px;
+    width: 100%;
+    text-align: center;
+    font-family: 'Federant';
+    font-size: 22px;
+  }
+}
+
+  @media screen and (max-width: 640px) {
+  #headerStyle {
+    font-size: 48px;
+    padding-bottom: 25px;
+    font-family: 'Federant';
+  }
+  
+  #paragraphStyle {
+    font-size: 20px;
+    font-family: 'Slabo 27px';
+    letter-spacing: 1px;
+    padding: 15px 0px 15px 0px;
+  }
+  
+  #directionTop {
+    position: relative;
+    display: inline-block;
+    width: 94%;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(133, 81, 192);
+    line-height: 24px;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    }
+  
+  #actualGame {
+    position: relative;
+    top: 50px;
+    width: 100%;
+    text-align: center;
+    font-family: 'Federant';
+    font-size: 24px;
+  }
+
+  #crystalHolder {
+    width: 100%;
+    overflow-wrap: break-word;
+    padding-top: 25px;
+  }
+}
+
+  @media screen and (max-width: 412px) {
+  #headerStyle {
+    font-size: 44px;
+    padding-bottom: 25px;
+    font-family: 'Federant';
+  }
+    
+  #paragraphStyle {
+    font-size: 18px;
+    font-family: 'Slabo 27px';
+    letter-spacing: 1px;
+    padding: 15px 0px 15px 0px;
+  }
+    
+  #directionTop {
+    position: relative;
+    display: inline-block;
+    width: 94%;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(133, 81, 192);
+    line-height: 24px;
+    color: white;
+    text-align: center;
+    padding: 25px;
+  }
+    
+  #actualGame {
+    position: relative;
+    top: 50px;
+    width: 100%;
+    text-align: center;
+    font-family: 'Federant';
+    font-size: 22px;
+  }
+  
+  #crystalHolder {
+    width: 100%;
+    padding-top: 25px;
+  }
+}
